@@ -1,0 +1,96 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: blueviolet;
+}
+
+.container .form {
+    width: 100%;
+}
+
+.container .form .input-filed {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .form .input-filed input {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.container .form .input-filed label {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-filed1 .btn {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-filed1 .btn:hover {
+    background-color: #ccc;
+}
+
+.anc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.anc a {
+    text-align: center;
+    text-decoration: none;
+    color: #007BFF;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .container .form .input-filed {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .container .form .input-filed label {
+        width: 200px;
+        margin-bottom: 0;
+    }
+
+    .container .form .input-filed input {
+        flex: 1;
+    }
+}
